@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loopstudios</title>
+    <!-- fontawesome link -->
+    <script src="https://kit.fontawesome.com/687c8aeb98.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+<body>
+    <section id="hero-section">
+    <nav id="nav" class="p-6 flex items-center justify-between">
+        <div id="logo">
+            <img src="./images/logo.svg" alt="logo">
+        </div>
+        <div id="nav-bar" class="hidden items-center gap-6 lg:flex font-bold text-white">
+            <a href="#">About</a>
+            <a href="#">Careers</a>
+            <a href="#">Events</a>
+            <a href="#">Products</a>
+            <a href="#">Support</a>
+        </div>
+        <button class="flex  lg:hidden" onclick="navHandler()">
+            <i class="fa fa-bars text-2xl text-white"></i>
+        </button>
+        
+
+        <div id="navDiolog" class="hidden fixed z-10 lg:hidden inset-0 p-3 backdrop-blur-md">
+            <div id="nav-bar" class="flex justify-between items-center ">
+                <div id="logo">
+                    <img src="./images/logo.svg" alt="logo">
+                </div>
+                <button id="nav_handler" onclick="navHandler()" class="lg:hidden">
+                    <i class="fa-solid fa-xmark text-white text-3xl" ></i>
+                </button>
+                
+            </div>
+            <div class="mt-6">
+                <a href="#" class="block font-medium p-3 mt-3 rounded-lg text-white" onclick="hideMenu()">About</a>
+                <a href="#" class="block font-medium p-3 mt-3 rounded-lg text-white" onclick="hideMenu()">Careers</a>
+                <a href="#" class="block font-medium p-3 mt-3 rounded-lg text-white" onclick="hideMenu()">Events</a>
+                <a href="#" class="block font-medium p-3 mt-3 rounded-lg text-white" onclick="hideMenu()">Products</a>
+                <a href="#" class="block font-medium p-3 mt-3 rounded-lg text-white" onclick="hideMenu()">Support</a>
+            </div>
+        </div>
+    </nav>
+    <!-- hero -->
+     <div id="hero" class="max-w-xl border border-1 border-white p-5 mx-9 my-20">
+        <h1 class="text-6xl md:text-8xl text-white font-thin">Impressive Experiences That Deliver</h1>
+     </div>
+    </section>
+</body>
+<script src="./main.js"></script>
+</html>
