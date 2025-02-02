@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+    scroll-behavior: smooth;
+}
+
 #hero-section {
     width: 100%;
     height: 100vh;

@@ -9,14 +9,15 @@
     <link rel="stylesheet" href="./css/output.css">
 </head>
 <body>
+    <!-- hero section -->
     <section id="hero-section">
     <nav id="nav" class="p-6 flex items-center justify-between">
         <div id="logo">
             <img src="./images/logo.svg" alt="logo">
         </div>
         <div id="nav-bar" class="hidden items-center gap-6 lg:flex font-bold text-white">
-            <a href="#">About</a>
-            <a href="#">Careers</a>
+            <a href="#hero">About</a>
+            <a href="#careers">Careers</a>
             <a href="#">Events</a>
             <a href="#">Products</a>
             <a href="#">Support</a>
@@ -37,19 +38,31 @@
                 
             </div>
             <div class="mt-6">
-                <a href="#" class="block font-medium p-3 mt-3 rounded-lg text-white" onclick="hideMenu()">About</a>
-                <a href="#" class="block font-medium p-3 mt-3 rounded-lg text-white" onclick="hideMenu()">Careers</a>
+                <a href="#hero" class="block font-medium p-3 mt-3 rounded-lg text-white" onclick="hideMenu()">About</a>
+                <a href="#careers" class="block font-medium p-3 mt-3 rounded-lg text-white" onclick="hideMenu()">Careers</a>
                 <a href="#" class="block font-medium p-3 mt-3 rounded-lg text-white" onclick="hideMenu()">Events</a>
                 <a href="#" class="block font-medium p-3 mt-3 rounded-lg text-white" onclick="hideMenu()">Products</a>
                 <a href="#" class="block font-medium p-3 mt-3 rounded-lg text-white" onclick="hideMenu()">Support</a>
             </div>
         </div>
     </nav>
-    <!-- hero -->
+    <!-- hero body -->
      <div id="hero" class="max-w-xl border border-1 border-white p-5 mx-9 my-20">
-        <h1 class="text-6xl md:text-8xl text-white font-thin">Impressive Experiences That Deliver</h1>
+        <h1 class="text-5xl md:text-8xl text-white font-thin">Impressive Experiences That Deliver</h1>
      </div>
     </section>
+    <!-- careers section -->
+     <section id="careers" class="w-[100%] my-10">
+        <div id="container" class="max-w-6xl mx-auto flex flex-col lg:flex-row text-left items-center justify-between lg:relative">
+            <div id="vr-img" class="max-w-sm lg:max-w-3xl mx-auto lg:mx-0">
+                <img src="./images/desktop/image-interactive.jpg" alt="vr image">
+            </div>
+            <div id="careers-text" class="bg-white max-w-2xl p-10 text-black space-y-7 lg:absolute top-[50%] tight-0 left-[50%]">
+                <h1 class="text-5xl md:text-7xl max-w-xl font-thin mx-auto">The leader in interactive VR</h1>
+                <p class="text-sm max-w-[90%] lg:max-w-[80%] leading-[25px] mx-auto md:mx-0">Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p>
+            </div>
+        </div>
+     </section>
 </body>
 <script src="./main.js"></script>
 </html>
