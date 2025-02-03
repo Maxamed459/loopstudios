@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,61 +9,140 @@
     <script src="https://kit.fontawesome.com/687c8aeb98.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/output.css">
 </head>
+
 <body>
     <!-- hero section -->
     <section id="hero-section">
-    <nav id="nav" class="p-6 flex items-center justify-between">
-        <div id="logo">
-            <img src="./images/logo.svg" alt="logo">
-        </div>
-        <div id="nav-bar" class="hidden items-center gap-6 lg:flex font-bold text-white">
-            <a href="#hero">About</a>
-            <a href="#careers">Careers</a>
-            <a href="#">Events</a>
-            <a href="#">Products</a>
-            <a href="#">Support</a>
-        </div>
-        <button class="flex  lg:hidden" onclick="navHandler()">
-            <i class="fa fa-bars text-2xl text-white"></i>
-        </button>
-        
+        <nav id="nav" class="p-6 flex items-center justify-between">
+            <div id="logo">
+                <img src="./images/logo.svg" alt="logo">
+            </div>
+            <div id="nav-bar" class="hidden items-center gap-6 lg:flex font-bold text-white">
+                <a href="#hero">About</a>
+                <a href="#careers">Careers</a>
+                <a href="#">Events</a>
+                <a href="#">Products</a>
+                <a href="#">Support</a>
+            </div>
+            <button class="flex  lg:hidden" onclick="navHandler()">
+                <i class="fa fa-bars text-2xl text-white"></i>
+            </button>
 
-        <div id="navDiolog" class="hidden fixed lg:hidden inset-0 p-6 backdrop-blur-md">
-            <div id="nav-bar" class="flex justify-between items-center ">
-                <div id="logo">
-                    <img src="./images/logo.svg" alt="logo">
+
+            <div id="navDiolog" class="hidden fixed lg:hidden inset-0 p-6 backdrop-blur-md">
+                <div id="nav-bar" class="flex justify-between items-center ">
+                    <div id="logo">
+                        <img src="./images/logo.svg" alt="logo">
+                    </div>
+                    <button id="nav_handler" onclick="navHandler()" class="lg:hidden">
+                        <i class="fa-solid fa-xmark text-white text-3xl"></i>
+                    </button>
+
                 </div>
-                <button id="nav_handler" onclick="navHandler()" class="lg:hidden">
-                    <i class="fa-solid fa-xmark text-white text-3xl" ></i>
-                </button>
-                
+                <div class="mt-6">
+                    <a href="#hero" class="block font-medium p-3 mt-3 rounded-lg text-white"
+                        onclick="hideMenu()">About</a>
+                    <a href="#careers" class="block font-medium p-3 mt-3 rounded-lg text-white"
+                        onclick="hideMenu()">Careers</a>
+                    <a href="#" class="block font-medium p-3 mt-3 rounded-lg text-white" onclick="hideMenu()">Events</a>
+                    <a href="#" class="block font-medium p-3 mt-3 rounded-lg text-white"
+                        onclick="hideMenu()">Products</a>
+                    <a href="#" class="block font-medium p-3 mt-3 rounded-lg text-white"
+                        onclick="hideMenu()">Support</a>
+                </div>
             </div>
-            <div class="mt-6">
-                <a href="#hero" class="block font-medium p-3 mt-3 rounded-lg text-white" onclick="hideMenu()">About</a>
-                <a href="#careers" class="block font-medium p-3 mt-3 rounded-lg text-white" onclick="hideMenu()">Careers</a>
-                <a href="#" class="block font-medium p-3 mt-3 rounded-lg text-white" onclick="hideMenu()">Events</a>
-                <a href="#" class="block font-medium p-3 mt-3 rounded-lg text-white" onclick="hideMenu()">Products</a>
-                <a href="#" class="block font-medium p-3 mt-3 rounded-lg text-white" onclick="hideMenu()">Support</a>
-            </div>
+        </nav>
+        <!-- hero body -->
+        <div id="hero" class="max-w-xl border border-1 border-white p-5 mx-9 my-20">
+            <h1 class="text-5xl md:text-8xl text-white font-thin">Impressive Experiences That Deliver</h1>
         </div>
-    </nav>
-    <!-- hero body -->
-     <div id="hero" class="max-w-xl border border-1 border-white p-5 mx-9 my-20">
-        <h1 class="text-5xl md:text-8xl text-white font-thin">Impressive Experiences That Deliver</h1>
-     </div>
     </section>
     <!-- careers section -->
-     <section id="careers" class="w-[100%] my-10">
-        <div id="container" class="max-w-6xl mx-auto flex flex-col lg:flex-row text-left items-center justify-between lg:relative">
+    <section id="careers" class="w-[100%] mt-20 mb-20 min-h-[100vh]">
+        <div id="container"
+            class="max-w-6xl mx-auto flex flex-col lg:flex-row text-left items-center justify-between lg:relative space-y-7 lg:space-y-0s">
             <div id="vr-img" class="max-w-sm lg:max-w-3xl mx-auto lg:mx-0">
                 <img src="./images/desktop/image-interactive.jpg" alt="vr image">
             </div>
-        <div id="careers-text" class="backdrop-blur-lg max-w-2xl p-10 text-black space-y-7 lg:absolute top-[50%] tight-0 left-[50%]">
+            <div id="careers-text"
+                class="backdrop-blur-lg max-w-sm lg:max-w-2xl p-10 text-black space-y-7 lg:absolute top-[50%] tight-0 left-[50%] border-1 ">
                 <h1 class="text-5xl md:text-7xl max-w-xl font-thin mx-auto">The leader in interactive VR</h1>
-                <p class="text-sm max-w-[90%] lg:max-w-[80%] leading-[25px] mx-auto md:mx-0">Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p>
+                <p class="text-sm max-w-[90%] lg:max-w-[80%] leading-[25px] mx-auto md:mx-0">Founded in 2011,
+                    Loopstudios has been producing world-class virtual reality projects for some of the best companies
+                    around the globe. Our award-winning creations have transformed businesses through digital
+                    experiences that bind to their brand.</p>
             </div>
         </div>
-     </section>
+    </section>
+    <!-- Events section -->
+    <section id="events" class="w-[100%] min-h-[100vh] pt-20 mb-10">
+        <div id="container" class="max-w-sm lg:max-w-6xl mx-auto ">
+            <div id="events-header" class="flex items-center justify-between">
+                <h1 class="text-xl lg:text-5xl font-thin">OUR CREATIONS</h1>
+                <button class="border-1 text-sm lg:text-xl px-9 py-2">SEE ALL</button>
+            </div>
+            <div id="events-cards" class="grid grid-cols-1 lg:grid-cols-4 gap-11 lg:max-w-6xl mx-auto pt-20 pb-10">
+                <div id="card1" class="relative text-white hover:text-black group overflow-hidden">
+                    <img src="./images/desktop/image-curiosity.jpg" alt="" class="object-cover transition-transform duration-300 group-hover:scale-110 group-hover:opacity-50 w-full lg:w-auto hidden lg:block">
+
+                    <img src="./images/mobile/image-curiosity.jpg" alt="" class="object-cover transition-transform duration-300 group-hover:scale-110 group-hover:opacity-50 w-full lg:w-auto block lg:hidden">
+                    <p class="text-4xl absolute top-[60%] lg:top-[80%] bottom-[35px] left-[20px]">curiosity</p>
+                </div>
+
+                <div id="card2" class="relative text-white hover:text-black group overflow-hidden">
+                    <img src="./images/desktop/image-deep-earth.jpg" alt="" class="object-cover transition-transform duration-300 group-hover:scale-110 group-hover:opacity-50 w-full lg:w-auto hidden lg:block">
+
+                    <img src="./images/mobile/image-deep-earth.jpg" alt="" class="object-cover transition-transform duration-300 group-hover:scale-110 group-hover:opacity-50 w-full lg:w-auto block lg:hidden">
+                    <p class="text-4xl absolute top-[60%] lg:top-[80%] bottom-[20px] left-[20px]">deep-earth</p>
+                </div>
+
+                <div id="card3" class="relative text-white hover:text-black group overflow-hidden">
+                    <img src="./images/desktop/image-fisheye.jpg" alt="" class="object-cover transition-transform duration-300 group-hover:scale-110 group-hover:opacity-50 w-full lg:w-auto hidden lg:block">
+
+                    <img src="./images/mobile/image-fisheye.jpg" alt="" class="object-cover transition-transform duration-300 group-hover:scale-110 group-hover:opacity-50 w-full lg:w-auto block lg:hidden">
+                    <p class="text-4xl absolute top-[60%] lg:top-[80%] bottom-[25px] left-[20px]">fisheye</p>
+                </div>
+
+                <div id="card4" class="relative text-white hover:text-black group overflow-hidden">
+                    <img src="./images/desktop/image-from-above.jpg" alt="" class="object-cover transition-transform duration-300 group-hover:scale-110 group-hover:opacity-50 w-full lg:w-auto hidden lg:block">
+
+                    <img src="./images/mobile/image-from-above.jpg" alt="" class="object-cover transition-transform duration-300 group-hover:scale-110 group-hover:opacity-50 w-full lg:w-auto block lg:hidden">
+                    <p class="text-4xl  absolute top-[60%] lg:top-[80%] bottom-[25px] left-[20px]">from-above</p>
+                </div>
+
+                <div id="card5" class="relative text-white hover:text-black group overflow-hidden">
+                    <img src="./images/desktop/image-grid.jpg" alt="" class="object-cover transition-transform duration-300 group-hover:scale-110 group-hover:opacity-50 w-full lg:w-auto hidden lg:block">
+
+                    <img src="./images/mobile//image-grid.jpg" alt="" class="object-cover transition-transform duration-300 group-hover:scale-110 group-hover:opacity-50 w-full lg:w-auto block lg:hidden">
+                    <p class="text-4xl absolute top-[60%] lg:top-[80%] bottom-[25px] left-[20px]">grid</p>
+                </div>
+
+                <div id="card6" class="relative text-white hover:text-black group overflow-hidden">
+                    <img src="./images/desktop/image-night-arcade.jpg" alt="" class="object-cover transition-transform duration-300 group-hover:scale-110 group-hover:opacity-50 w-full lg:w-auto hidden lg:block">
+
+                    <img src="./images/mobile//image-night-arcade.jpg" alt="" class="object-cover transition-transform duration-300 group-hover:scale-110 group-hover:opacity-50 w-full lg:w-auto block lg:hidden">
+                    <p class="text-4xl  absolute top-[60%] lg:top-[80%] bottom-[25px] left-[20px]">night-arcade</p>
+                </div>
+
+                <div id="card7" class="relative text-white hover:text-black group overflow-hidden">
+                    <img src="./images/desktop/image-pocket-borealis.jpg" alt="" class="object-cover transition-transform duration-300 group-hover:scale-110 group-hover:opacity-50 w-full lg:w-auto hidden lg:block">
+
+                    <img src="./images/mobile/image-pocket-borealis.jpg" alt="" class="object-cover transition-transform duration-300 group-hover:scale-110 group-hover:opacity-50 w-full lg:w-auto block lg:hidden">
+                    <p class="text-4xl  absolute top-[60%] lg:top-[80%] bottom-[25px] left-[20px]">pocket-borealis</p>
+                </div>
+
+                <div id="card8" class="relative text-white hover:text-black group overflow-hidden">
+                    <img src="./images/desktop/image-soccer-team.jpg" alt="" class="object-cover transition-transform duration-300 group-hover:scale-110 group-hover:opacity-50 w-full lg:w-auto hidden lg:block">
+
+                    <img src="./images/mobile/image-soccer-team.jpg" alt="" class="object-cover transition-transform duration-300 group-hover:scale-110 group-hover:opacity-50 w-full lg:w-auto block lg:hidden">
+                    <p class="text-4xl inset-0 absolute top-[60%] lg:top-[80%] bottom-[25px] left-[20px]">soccer-team</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
 </body>
 <script src="./main.js"></script>
+
 </html>
